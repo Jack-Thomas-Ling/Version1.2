@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MyBBS">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyBBS</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shiyan9_springMVCTest" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
+          <element id="library" level="module" name="JUnit4" module-name="shiyan9_springMVCTest" />
+          <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="shiyan9_springMVCTest/web/Web" />
+      <element id="artifact" artifact-name="shiyan9_springMVCTest_war_exploded" />
+    </root>
+  </artifact>
+</component>
