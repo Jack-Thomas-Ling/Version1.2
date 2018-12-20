@@ -1,7 +1,6 @@
 package cn.edu.ncu.service;
 
 
-import cn.edu.ncu.dao.CategoryDao;
 import cn.edu.ncu.dao.CategoryDao1;
 import cn.edu.ncu.entity.Category;
 import org.springframework.beans.factory.annotation.Autowired;

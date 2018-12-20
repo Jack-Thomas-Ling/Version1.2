@@ -17,7 +17,21 @@
 
 <h1>Hi, there!</h1>
 
-<h2>The path is avalable</h2>
+<h2>The path is available</h2>
+<h2>Here is the information of category, including id, name and description.</h2>
 
+<ur>
+
+<c:forEach items="${category}" var="category">
+    <li >
+        <a href="#" >${category.id}</a>
+        <a href="#" >${category.name}</a>
+        <a href="#" >${category.description}</a>
+
+
+    </li>
+
+</c:forEach>
+</ur>
 </body>
 </html>

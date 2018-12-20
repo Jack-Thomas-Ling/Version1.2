@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -26,6 +27,19 @@ public class CategoryController {
         List<Category> list =categoryService.findAll();
         model.addAttribute("category",list);
         return "main";
+    }
+
+    @RequestMapping(value = "/modelview")
+    public ModelAndView showCategory(ModelAndView model){
+        List<Category> list =categoryService.findAll();
+        model.setViewName("main1");
+        model.addObject("category",list);
+        //这李传过去的category实际上是一个list，包含了所有的查询到的结果
+        return model;
+
+        //main1.jsp就可以调用，model里面面添加进去的attributeName，这里添加进去的是一个实体，
+        // 或者实体的集合   及其属性
+        //jsp中直接调用，及可以显示；
     }
 
 }
